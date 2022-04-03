@@ -13,7 +13,7 @@ int main(){
     for(auto &i: arr){
         if(i<prev)
             res+=(long long)(prev-i);
-        prev = i;
+        prev = max(prev,i);
     }
     cout<<res;
     return 0;
